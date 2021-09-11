@@ -1,0 +1,42 @@
+- doc: "This is my first test-data"
+  data:
+    forward read:
+        location: https://zenodo.org/record/4555735/files/NC_045512.2_reference.fasta
+        md5: 
+        sha256:
+        unpack: False
+        ## preferably EDAM ontology
+        filetype: fasta
+    reverse read:
+        location: https://zenodo.org/record/4555735/files/NC_045512.2_reference.fasta
+        md5: 
+        sha256:
+        unpack: False
+        ## preferably EDAM ontology
+        filetype: fasta
+  ## preferably SPDX identifier
+  license: CC-BY-4.0
+  used-by:
+    - trintiy
+    - bowtie2
+    - hisat
+
+
+- doc: "Second test dataset, tiny virus genome"
+  data:
+    # Name can be freely choosen, we recommend something descriptive
+    reference data:
+        location: https://zenodo.org/record/4555735/files/NC_045512.2_reference.fasta
+        md5: 
+        sha256:
+        # if a test dataset consists of many small files (e.g. a small index structure) you can reference a archive with a proper file ending and indiate that it would be unpacked
+        # before it should be used
+        unpack: False
+        ## preferably EDAM ontology
+        filetype: fasta
+  ## preferably SPDX identifier
+  license: CC-BY-4.0
+  used-by:
+    - trintiy
+    - bowtie2
+    - hisat
