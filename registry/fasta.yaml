@@ -12,6 +12,8 @@
         filetype: fasta
   ## preferably SPDX identifier
   license: CC-BY-4.0
+  ## size in bytes, e.g. with `du -b NC_045512.2_reference.fasta`
+  size: 29917
   used-by:
     - trintiy
     - bowtie2
