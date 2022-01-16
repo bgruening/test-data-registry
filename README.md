@@ -9,8 +9,10 @@ communities, e.g. Galaxy, Snakemake or Nextflow.
 * test data can be stored anywhere, __not__ in this repo
 * this is a registry, so we annotate test data here and provide a link to the real data; [example](https://github.com/bgruening/test-data-registry/blob/main/registry/fasta.yaml)
 * we need to find a way to create unified identifier for each test dataset, this could be a simple hashtable, created/updated automatically by CI
+* hashmap (UUID -> test data URI) needs to be save in a format that can be read by multiple languages, not just Python, we can use something fancy, or simply a tabular or jsonb
 * the tools that wants to use the test data needs to specify the UUID - the hash; this is the weakest point imho, as this is not super transparent for a tool dev (Bjoern hopes that tooling might help here)
 * the community can iterate over this github repo and collect the test data to create a backup - simple store with the hash maybe
+  * (if we can afford that, which I think we can, the hash lookup would be not nessesary, as we can construct the URL out of the hash)
 * tool tests using UUID, will be crawling the hashmap in this repo to find the URI - download test data, run the tests
 * a fancy website could be created to search for similar tools, similar datasets to guide users to find cool test data
 
