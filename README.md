@@ -7,7 +7,7 @@ communities, e.g. Galaxy, Snakemake or Nextflow.
 The idea in a nutshell:
 
 * test data can be stored anywhere, __not__ in this repo
-* this is a registry, so we annotate test data here and provide a link to the real data
+* this is a registry, so we annotate test data here and provide a link to the real data; [example](https://github.com/bgruening/test-data-registry/blob/main/registry/fasta.yaml)
 * we need to find a way to create unified identifier for each test dataset, this could be a simple hashtable, created/updated automatically by CI
 * the tools that want to use the test data, specifying the unique ID - the hash - this is the weakest point imho, as this is not super transparent for a tool dev (Bjoern hopes that tooling might help here)
 * the community can iterate over this github repo and collect the test data to create a backup - simple store with the hash maybe
