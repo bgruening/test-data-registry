@@ -9,7 +9,7 @@ communities, e.g. Galaxy, Snakemake or Nextflow.
 * test data can be stored anywhere, __not__ in this repo
 * this is a registry, so we annotate test data here and provide a link to the real data; [example](https://github.com/bgruening/test-data-registry/blob/main/registry/fasta.yaml)
 * we need to find a way to create unified identifier for each test dataset, this could be a simple hashtable, created/updated automatically by CI
-* the tools that want to use the test data, specifying the UUID - the hash - this is the weakest point imho, as this is not super transparent for a tool dev (Bjoern hopes that tooling might help here)
+* the tools that wants to use the test data needs to specify the UUID - the hash; this is the weakest point imho, as this is not super transparent for a tool dev (Bjoern hopes that tooling might help here)
 * the community can iterate over this github repo and collect the test data to create a backup - simple store with the hash maybe
 * tool tests using UUID, will be crawling the hashmap in this repo to find the URI - download test data, run the tests
 * a fancy website could be created to search for similar tools, similar datasets to guide users to find cool test data
@@ -20,9 +20,10 @@ communities, e.g. Galaxy, Snakemake or Nextflow.
 * We iterate over the repos and the git history and extract all "good" datasets
 * The datasets are then added to this registry here (the download URL is the github URL), automatically
 * Planemo needs the following updates:
-  * Download test data via URL
-  * the value in `<param name="inp_ped" value="pedin.21" />` should accept 1) a URI or a data-registry-hash (we can replace `value` by `uri` or `tr_hash` ...)
-  * if the test speciefies a tr_hash the hash is resolved to a URI, the URI is passed from planemo to Galaxy
+  * upload test data from planemo to Galaxy via URL (paste URL)
+  * the value in `<param name="inp_ped" value="pedin.21" />` should accept a `URI` or a test-registry-hash (we can replace `value` by `uri` or `tr_hash` ...)
+  * if the test specifies a tr_hash the hash is resolved to a URI, the URI is passed from planemo to Galaxy
+  * hash resolving is done my downloading the mapping from UUID to URI from this repo here and do a lockup, can be cached
 * We can then migrate a few tools to use the new hash-identified, or URI based download of test data
 * We can backup the test-data-registry to depot.galaxyproject.org on a regular basis similar to what we do with cargo-port
 * If we are happy with this model, we could even pruify our tool repos and remove test data
