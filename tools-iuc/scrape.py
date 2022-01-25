@@ -29,7 +29,17 @@ for wrapper in wrappers:
     for test_index, test in enumerate(tests):
         for inp in test['inputs']:
             if not inp.get('value'):
-                continue
+                # test for collections
+                if inp.get('attributes', {}).get('collection'):
+                    collection = inp['attributes']['collection'].to_dict()
+                    for el in collection.get('elements', []):
+                        # print(el.get('element_definition', {}).get('value'))
+                        if not el.get('element_definition', {}).get('value'):
+                            continue
+                        if os.path.exists(f"{wrapper_base_dir}/test-data/{el['element_definition']['value']}"):
+                            test_inputs[el['element_definition']['name']] = f"{'/'.join((github_url, wrapper.split('/')[-2]))}/test-data/{el['element_definition']['value']}"
+                else:
+                    continue
             if os.path.exists(f"{wrapper_base_dir}/test-data/{inp['value']}"):
                 test_inputs[inp['name']] = f"{'/'.join((github_url, wrapper.split('/')[-2]))}/test-data/{inp['value']}"
                 wrapper_data[test_index] = test_inputs

@@ -224,15 +224,19 @@ bayescan/bayescan.xml:
     input: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/bayescan/test-data/test_binary_AFLP.txt
 bbtools/bbduk.xml:
   0: &id026
+    forward: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/bbtools/test-data/13-1941-6_S4_L001_R1_600000.fastq.gz
     read1: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/bbtools/test-data/13-1941-6_S4_L001_R1_600000.fastq.gz
     read2: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/bbtools/test-data/13-1941-6_S4_L001_R2_600000.fastq.gz
     reference: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/bbtools/test-data/adapters.fa.gz
+    reverse: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/bbtools/test-data/13-1941-6_S4_L001_R2_600000.fastq.gz
   1: *id026
 bbtools/bbmap.xml:
   0: &id027
+    forward: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/bbtools/test-data/13-1941-6_S4_L001_R1_600000.fastq.gz
     read1: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/bbtools/test-data/13-1941-6_S4_L001_R1_600000.fastq.gz
     read2: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/bbtools/test-data/13-1941-6_S4_L001_R2_600000.fastq.gz
     reference: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/bbtools/test-data/NC_002945v4.fasta
+    reverse: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/bbtools/test-data/13-1941-6_S4_L001_R2_600000.fastq.gz
   1: *id027
   2: *id027
 bbtools/callvariants.xml:
@@ -706,9 +710,11 @@ blastxml_to_gapped_gff3/blastxml_to_gapped_gff3.xml:
     blastxml: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/blastxml_to_gapped_gff3/test-data/input.xml
 bowtie2/bowtie2_wrapper.xml:
   0: &id077
+    forward: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/bowtie2/test-data/bowtie2-fq1.fq
     input_1: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/bowtie2/test-data/bowtie2-fq1.fa
     input_2: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/bowtie2/test-data/bowtie2-fq2.fa
     own_file: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/bowtie2/test-data/bowtie2-ref.fasta
+    reverse: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/bowtie2/test-data/bowtie2-fq2.fq
   1: *id077
   2: *id077
   3: *id077
@@ -772,9 +778,11 @@ bwa_mem2/bwa-mem2.xml:
   6: *id083
 bwameth/bwameth.xml:
   0: &id084
+    forward: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/bwameth/test-data/t_R1.fastq.gz
     input_mate1: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/bwameth/test-data/t_R1.fastq.gz
     input_mate2: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/bwameth/test-data/t_R2.fastq.gz
     reference: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/bwameth/test-data/ref.fa.gz
+    reverse: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/bwameth/test-data/t_R2.fastq.gz
   1: *id084
 calculate_contrast_threshold/calculate_contrast_threshold.xml:
   0: &id085
@@ -994,10 +1002,12 @@ crossmap/crossmap_wig.xml:
   1: *id108
 cutadapt/cutadapt.xml:
   0: &id109
+    forward: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/cutadapt/test-data/bwa-mem-fastq1.fq.gz
     input_1: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/cutadapt/test-data/cutadapt_small.fastq
     input_2: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/cutadapt/test-data/bwa-mem-fastq2_assimetric.fq.gz
     library|input_1: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/cutadapt/test-data/cutadapt_in_split.fastq.gz
     library|r1|front_adapters_0|front_adapter_source|front_adapter_file: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/cutadapt/test-data/barcodes.fasta
+    reverse: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/cutadapt/test-data/bwa-mem-fastq2.fq.gz
   1: *id109
   2: *id109
   4: *id109
@@ -1051,8 +1061,10 @@ dada2/dada2_dada.xml:
   2: *id113
 dada2/dada2_filterAndTrim.xml:
   1: &id114
+    forward: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/dada2/test-data/F3D0_S188_L001_R1_001.fastq.gz
     paired_cond|reads: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/dada2/test-data/F3D0_S188_L001_R1_001.fastq.gz
     paired_cond|sdaer: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/dada2/test-data/F3D0_S188_L001_R2_001.fastq.gz
+    reverse: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/dada2/test-data/F3D0_S188_L001_R2_001.fastq.gz
   2: *id114
   3: *id114
   4: *id114
@@ -1069,11 +1081,15 @@ dada2/dada2_plotComplexity.xml:
   4: &id116
     batch_cond|paired_cond|reads: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/dada2/test-data/F3D0_S188_L001_R1_001.fastq.gz
     batch_cond|paired_cond|sdaer: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/dada2/test-data/F3D0_S188_L001_R2_001.fastq.gz
+    forward: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/dada2/test-data/F3D0_S188_L001_R1_001.fastq.gz
+    reverse: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/dada2/test-data/F3D0_S188_L001_R2_001.fastq.gz
   5: *id116
 dada2/dada2_plotQualityProfile.xml:
   4: &id117
     batch_cond|paired_cond|reads: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/dada2/test-data/F3D0_S188_L001_R1_001.fastq.gz
     batch_cond|paired_cond|sdaer: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/dada2/test-data/F3D0_S188_L001_R2_001.fastq.gz
+    forward: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/dada2/test-data/F3D0_S188_L001_R1_001.fastq.gz
+    reverse: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/dada2/test-data/F3D0_S188_L001_R2_001.fastq.gz
   5: *id117
 dada2/dada2_removeBimeraDenovo.xml:
   0: &id118
@@ -1160,6 +1176,12 @@ delly/lr.xml:
 delly/merge.xml: {}
 deseq2/deseq2.xml:
   1: &id127
+    '1': https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/deseq2/test-data/sailfish/sailfish_quant.sf1.tab
+    '2': https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/deseq2/test-data/sailfish/sailfish_quant.sf2.tab
+    '3': https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/deseq2/test-data/sailfish/sailfish_quant.sf3.tab
+    '4': https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/deseq2/test-data/sailfish/sailfish_quant.sf4.tab
+    '5': https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/deseq2/test-data/sailfish/sailfish_quant.sf5.tab
+    '6': https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/deseq2/test-data/sailfish/sailfish_quant.sf6.tab
     batch_factors: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/deseq2/test-data/batch_factors.tab
     gtf_file: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/deseq2/test-data/Homo_sapiens.GRCh38.94.gtf
     tabular_file: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/deseq2/test-data/tx2gene.tab
@@ -1556,8 +1578,10 @@ fastani/fastani.xml:
     reference: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/fastani/test-data/S.flexneri_1.fasta
 fastp/fastp.xml:
   0: &id146
+    forward: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/fastp/test-data/bwa-mem-fastq1.fq
     in1: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/fastp/test-data/R1.fq.gz
     in2: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/fastp/test-data/bwa-mem-fastq2.fq
+    reverse: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/fastp/test-data/bwa-mem-fastq2.fq
   2: *id146
   3: *id146
   4: *id146
@@ -1630,8 +1654,8 @@ flair/flair_correct.xml:
   1: *id152
 flash/flash.xml:
   0: &id153
-    forward: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/flash/test-data/flash_forward_in4.fastqsanger.gz
-    reverse: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/flash/test-data/flash_reverse_in4.fastqsanger.gz
+    forward: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/flash/test-data/flash_forward_in5.fastqsanger.gz
+    reverse: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/flash/test-data/flash_reverse_in5.fastqsanger.gz
   1: *id153
   3: *id153
 fraggenescan/fraggenescan.xml:
@@ -2307,6 +2331,8 @@ htseq_count/htseq-count.xml:
   6: *id225
 humann/humann.xml:
   0: &id226
+    g__Bacteroides.s__Bacteroides_stercoris.centroids: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/humann/test-data/test-db/nucleotide-db/g__Bacteroides.s__Bacteroides_dorei.centroids.v296_201901b.ffn.gz
+    g__Bacteroides.s__Bacteroides_vulgatus.centroids: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/humann/test-data/test-db/nucleotide-db/g__Bacteroides.s__Bacteroides_vulgatus.centroids.v296_201901b.ffn.gz
     in|input: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/humann/test-data/demo.fastq.gz
     wf|prescreen|metaphlan_db|bowtie2db: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/humann/test-data/test-db/metaphlan-db/demo-db-v30.fasta
     wf|prescreen|metaphlan_db|mpa_pkl: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/humann/test-data/test-db/metaphlan-db/demo-db-v30.json
@@ -3018,8 +3044,10 @@ megan/blast2rma.xml:
     blast1: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/megan/test-data/blast_R1.txt
     blast2: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/megan/test-data/blast_R2.txt
     conFile: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/megan/test-data/contaminants.txt
+    forward: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/megan/test-data/13-1941-6_S4_L001_R1_600000.fastq.gz
     read1: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/megan/test-data/13-1941-6_S4_L001_R1_600000.fastq.gz
     read2: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/megan/test-data/13-1941-6_S4_L001_R2_600000.fastq.gz
+    reverse: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/megan/test-data/13-1941-6_S4_L001_R2_600000.fastq.gz
   1: *id301
   2: *id301
   3: *id301
@@ -3043,8 +3071,10 @@ megan/read_extractor.xml:
   3: *id304
 megan/sam2rma.xml:
   0: &id305
+    forward: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/megan/test-data/13-1941-6_S4_L001_R1_600000.fastq.gz
     read1: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/megan/test-data/13-1941-6_S4_L001_R1_600000.fastq.gz
     read2: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/megan/test-data/13-1941-6_S4_L001_R2_600000.fastq.gz
+    reverse: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/megan/test-data/13-1941-6_S4_L001_R2_600000.fastq.gz
     sam1: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/megan/test-data/input1.sam
     sam2: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/megan/test-data/input2.sam
   1: *id305
@@ -3166,7 +3196,9 @@ minimap2/minimap2.xml:
   0: &id318
     fastq_input1: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/minimap2/test-data/bwa-mem-fasta1.fa
     fastq_input2: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/minimap2/test-data/bwa-mem-fastq2.fq
+    forward: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/minimap2/test-data/bwa-mem-fastq1.fq
     ref_file: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/minimap2/test-data/bwa-mem-mt-genome.fa
+    reverse: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/minimap2/test-data/bwa-mem-fastq2.fq
   1: *id318
   2: *id318
   3: *id318
@@ -3216,6 +3248,7 @@ mlst/mlst_list.xml: {}
 moabs/moabs.xml:
   0: &id324
     doComp|compFile: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/moabs/test-data/SE_comp.g1.vs.g2.txt
+    forward: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/moabs/test-data/8_all_1.fq.gz
     g1_fastq_0|fastq_input|fastq_input1: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/moabs/test-data/WTPE1.fastq.gz
     g1_fastq_0|fastq_input|fastq_input2: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/moabs/test-data/6_all_2.fq.gz
     g1_fastq_1|fastq_input|fastq_input1: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/moabs/test-data/WTPE2.fastq.gz
@@ -3223,6 +3256,7 @@ moabs/moabs.xml:
     g2_fastq_0|fastq_input|fastq_input2: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/moabs/test-data/8_all_2.fq.gz
     g2_fastq_1|fastq_input|fastq_input1: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/moabs/test-data/TKO2PE2.fastq.gz
     ref_file: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/moabs/test-data/seg.fa
+    reverse: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/moabs/test-data/8_all_2.fq.gz
   1: *id324
   2: *id324
   3: *id324
@@ -3604,8 +3638,10 @@ mothur/make.biom.xml:
   2: *id378
 mothur/make.contigs.xml:
   0:
+    forward: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/mothur/test-data/Mock_S280_L001_R1_001_small.fastq
     input_type|forward_fastq: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/mothur/test-data/Mock_S280_L001_R1_001_small.fastq
     input_type|reverse_fastq: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/mothur/test-data/Mock_S280_L001_R2_001_small.fastq
+    reverse: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/mothur/test-data/Mock_S280_L001_R2_001_small.fastq
 mothur/make.design.xml:
   0:
     source: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/mothur/test-data/amazon.mothur.shared
@@ -3618,6 +3654,10 @@ mothur/make.group.xml:
   0:
     inputs_0|fasta: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/mothur/test-data/Mock_S280_L001_R1_001_small.trim.contigs.good.align_head
     inputs_1|fasta: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/mothur/test-data/Mock_S280_L001_R1_001_small.trim.contigs.good.align_head
+    test group: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/mothur/test-data/Mock_S280_L001_R1_001_small.trim.contigs.good.align_head
+    test-group2: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/mothur/test-data/Mock_S280_L001_R1_001_small.trim.contigs.good.align_head
+    testgroup: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/mothur/test-data/Mock_S280_L001_R1_001_small.trim.contigs.good.align_head
+    testgroup2: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/mothur/test-data/Mock_S280_L001_R1_001_small.trim.contigs.good.align_head
 mothur/make.lefse.xml:
   0: &id380
     design: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/mothur/test-data/toymothur.design2
@@ -4281,6 +4321,26 @@ optitype/optitype.xml:
   1: *id449
 orthofinder/orthofinder_only_groups.xml:
   4:
+    Blast0_0.txt: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/orthofinder/test-data/inputs/blastout/Blast0_0.txt
+    Blast0_1.txt: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/orthofinder/test-data/inputs/blastout/Blast0_1.txt
+    Blast0_2.txt: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/orthofinder/test-data/inputs/blastout/Blast0_2.txt
+    Blast0_3.txt: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/orthofinder/test-data/inputs/blastout/Blast0_3.txt
+    Blast1_0.txt: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/orthofinder/test-data/inputs/blastout/Blast1_0.txt
+    Blast1_1.txt: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/orthofinder/test-data/inputs/blastout/Blast1_1.txt
+    Blast1_2.txt: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/orthofinder/test-data/inputs/blastout/Blast1_2.txt
+    Blast1_3.txt: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/orthofinder/test-data/inputs/blastout/Blast1_3.txt
+    Blast2_0.txt: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/orthofinder/test-data/inputs/blastout/Blast2_0.txt
+    Blast2_1.txt: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/orthofinder/test-data/inputs/blastout/Blast2_1.txt
+    Blast2_2.txt: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/orthofinder/test-data/inputs/blastout/Blast2_2.txt
+    Blast2_3.txt: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/orthofinder/test-data/inputs/blastout/Blast2_3.txt
+    Blast3_0.txt: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/orthofinder/test-data/inputs/blastout/Blast3_0.txt
+    Blast3_1.txt: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/orthofinder/test-data/inputs/blastout/Blast3_1.txt
+    Blast3_2.txt: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/orthofinder/test-data/inputs/blastout/Blast3_2.txt
+    Blast3_3.txt: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/orthofinder/test-data/inputs/blastout/Blast3_3.txt
+    Species0.fa: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/orthofinder/test-data/inputs/blastfa/Species0.fa
+    Species1.fa: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/orthofinder/test-data/inputs/blastfa/Species1.fa
+    Species2.fa: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/orthofinder/test-data/inputs/blastfa/Species2.fa
+    Species3.fa: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/orthofinder/test-data/inputs/blastfa/Species3.fa
     init|seqIDs: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/orthofinder/test-data/inputs/blastids/SequenceIDs.txt
     init|specIDs: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/orthofinder/test-data/inputs/blastids/SpeciesIDs.txt
 pangolin/pangolin.xml:
@@ -4877,8 +4937,10 @@ rgrnastar/rg_rnaStar.xml:
   13: *id498
 rgrnastar/rg_rnaStarSolo.xml:
   0: &id499
+    forward: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/rgrnastar/test-data/pbmc_1k_v2_L001.R1.10k.fastq.gz
     refGenomeSource|genomeFastaFiles: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/rgrnastar/test-data/filtered3.Homo_sapiens.GRCh38.dna.chromosome.21.fa.gz
     refGenomeSource|sjdbGTFfile: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/rgrnastar/test-data/filtered3.Homo_sapiens.GRCh38.100.chr21.gtf
+    reverse: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/rgrnastar/test-data/pbmc_1k_v2_L001.R2.10k.fastq.gz
     sc|cb_whitelists_0|whitelist_file: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/rgrnastar/test-data/indrop.barcodes1.txt
     sc|cb_whitelists_1|whitelist_file: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/rgrnastar/test-data/indrop.barcodes2.txt
     sc|cell_ids: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/rgrnastar/test-data/smartseq.cellids.txt
@@ -5306,9 +5368,11 @@ shovill/shovill.xml:
   5: *id543
 sickle/sickle.xml:
   0: &id544
+    forward: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/sickle/test-data/test.f.fastq.gz
     input_combo: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/sickle/test-data/test.fastq
     input_paired1: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/sickle/test-data/test.f.fastq.gz
     input_paired2: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/sickle/test-data/test.r.fastq.gz
+    reverse: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/sickle/test-data/test.r.fastq.gz
   1: *id544
   2: *id544
   3: *id544
@@ -5373,7 +5437,9 @@ snippy/snippy.xml:
     fastq_input1: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/snippy/test-data/b_1.fastq
     fastq_input2: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/snippy/test-data/b_2.fastq
     fastq_input_single: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/snippy/test-data/b_2.fastq
+    forward: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/snippy/test-data/b_1.fastq
     reference_source|ref_file: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/snippy/test-data/reference.fasta
+    reverse: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/snippy/test-data/b_2.fastq
   1: *id551
   2: *id551
   3: *id551
@@ -5466,6 +5532,17 @@ stacks/stacks_clonefilter.xml:
   3: *id563
 stacks/stacks_cstacks.xml:
   2:
+    PopA_01.alleles.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/PopA_01.alleles.tsv
+    PopA_01.matches.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/PopA_01.matches.tsv
+    PopA_01.snps.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/PopA_01.snps.tsv
+    PopA_01.tags.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/PopA_01.tags.tsv
+    PopA_02.alleles.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/PopA_02.alleles.tsv
+    PopA_02.matches.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/PopA_02.matches.tsv
+    PopA_02.snps.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/PopA_02.snps.tsv
+    PopA_02.tags.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/PopA_02.tags.tsv
+    batch_1.catalog.alleles.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/batch_1.catalog.alleles.tsv
+    batch_1.catalog.snps.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/batch_1.catalog.snps.tsv
+    batch_1.catalog.tags.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/batch_1.catalog.tags.tsv
     popmap: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/denovo_map/popmap_cstacks.tsv
 stacks/stacks_denovomap.xml:
   0: &id564
@@ -5478,6 +5555,17 @@ stacks/stacks_denovomap.xml:
 stacks/stacks_genotypes.xml: {}
 stacks/stacks_populations.xml:
   0: &id565
+    PopA_01.alleles.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/PopA_01.alleles.tsv
+    PopA_01.matches.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/PopA_01.matches.tsv
+    PopA_01.snps.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/PopA_01.snps.tsv
+    PopA_01.tags.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/PopA_01.tags.tsv
+    PopA_02.alleles.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/PopA_02.alleles.tsv
+    PopA_02.matches.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/PopA_02.matches.tsv
+    PopA_02.snps.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/PopA_02.snps.tsv
+    PopA_02.tags.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/PopA_02.tags.tsv
+    batch_1.catalog.alleles.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/batch_1.catalog.alleles.tsv
+    batch_1.catalog.snps.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/batch_1.catalog.snps.tsv
+    batch_1.catalog.tags.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/batch_1.catalog.tags.tsv
     options_usage|input_vcf: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/populations/batch_1.vcf
     options_usage|popmap: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/denovo_map/popmap.tsv
   1: *id565
@@ -5506,9 +5594,31 @@ stacks/stacks_refmap.xml:
 stacks/stacks_rxstacks.xml: {}
 stacks/stacks_sstacks.xml:
   2:
+    PopA_01.alleles.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/PopA_01.alleles.tsv
+    PopA_01.matches.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/PopA_01.matches.tsv
+    PopA_01.snps.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/PopA_01.snps.tsv
+    PopA_01.tags.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/PopA_01.tags.tsv
+    PopA_02.alleles.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/PopA_02.alleles.tsv
+    PopA_02.matches.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/PopA_02.matches.tsv
+    PopA_02.snps.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/PopA_02.snps.tsv
+    PopA_02.tags.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/PopA_02.tags.tsv
+    batch_1.catalog.alleles.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/batch_1.catalog.alleles.tsv
+    batch_1.catalog.snps.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/batch_1.catalog.snps.tsv
+    batch_1.catalog.tags.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/batch_1.catalog.tags.tsv
     popmap: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/denovo_map/popmap_cstacks.tsv
 stacks/stacks_stats.xml:
   0:
+    PopA_01.alleles.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/PopA_01.alleles.tsv
+    PopA_01.matches.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/PopA_01.matches.tsv
+    PopA_01.snps.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/PopA_01.snps.tsv
+    PopA_01.tags.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/PopA_01.tags.tsv
+    PopA_02.alleles.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/PopA_02.alleles.tsv
+    PopA_02.matches.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/PopA_02.matches.tsv
+    PopA_02.snps.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/PopA_02.snps.tsv
+    PopA_02.tags.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/PopA_02.tags.tsv
+    batch_1.catalog.alleles.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/batch_1.catalog.alleles.tsv
+    batch_1.catalog.snps.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/batch_1.catalog.snps.tsv
+    batch_1.catalog.tags.tsv: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/genotypes/batch_1.catalog.tags.tsv
     logfile: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/ustacks/ustacks.out
     program: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks/test-data/ustacks
 stacks/stacks_ustacks.xml:
@@ -5517,13 +5627,23 @@ stacks/stacks_ustacks.xml:
   1: *id568
 stacks2/stacks_clonefilter.xml:
   0: &id569
+    forward: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/clonefilter/R1_0001.1.fq.gz
     input_type|fqinputs: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/clonefilter/R1_0001.1.fq.gz
+    reverse: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/clonefilter/R2_0001.2.fq.gz
   1: *id569
 stacks2/stacks_cstacks.xml:
   0:
+    PopA_01.alleles: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/ustacks/PopA_01.alleles.tsv
+    PopA_01.snps: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/ustacks/PopA_01.snps.tsv
+    PopA_01.tags: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/ustacks/PopA_01.tags.tsv
+    PopA_02.alleles: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/ustacks/PopA_02.alleles.tsv
+    PopA_02.snps: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/ustacks/PopA_02.snps.tsv
+    PopA_02.tags: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/ustacks/PopA_02.tags.tsv
     popmap: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/denovo_map/popmap_cstacks.tsv
 stacks2/stacks_denovomap.xml:
   0: &id570
+    PopA_01: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/demultiplexed/PopA_01.1.fq
+    PopA_02: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/demultiplexed/PopA_02.1.fq
     popmap: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/denovo_map/popmap_cstacks.tsv
   1: *id570
   2: *id570
@@ -5536,11 +5656,15 @@ stacks2/stacks_gstacks.xml:
   4: *id571
 stacks2/stacks_kmerfilter.xml:
   0: &id572
+    forward: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/clonefilter/R1_0001.1.fq.gz
     input_type|fqinputs: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/clonefilter/R1_0001.1.fq.gz
+    reverse: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/clonefilter/R2_0001.2.fq.gz
   2: *id572
   3: *id572
 stacks2/stacks_populations.xml:
   0: &id573
+    catalog.calls.vcf: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/gstacks/catalog.calls.vcf
+    catalog.fa.gz: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/gstacks/catalog.fa.gz
     options_filtering|blacklist: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/populations/blacklist.tsv
     options_usage|input_vcf: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/gstacks/catalog.calls.vcf
     popmap: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/denovo_map/popmap_cstacks_genotypes.tsv
@@ -5574,10 +5698,32 @@ stacks2/stacks_shortreads.xml:
   1: *id576
 stacks2/stacks_sstacks.xml:
   0: &id577
+    PopA_01.alleles: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/ustacks/PopA_01.alleles.tsv
+    PopA_01.snps: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/ustacks/PopA_01.snps.tsv
+    PopA_01.tags: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/ustacks/PopA_01.tags.tsv
+    PopA_02.alleles: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/ustacks/PopA_02.alleles.tsv
+    PopA_02.snps: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/ustacks/PopA_02.snps.tsv
+    PopA_02.tags: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/ustacks/PopA_02.tags.tsv
+    catalog.alleles: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/cstacks/catalog.alleles.tsv
+    catalog.snps: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/cstacks/catalog.snps.tsv
+    catalog.tags: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/cstacks/catalog.tags.tsv
     popmap: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/denovo_map/popmap_cstacks.tsv
   2: *id577
 stacks2/stacks_tsv2bam.xml:
   1: &id578
+    PopA_01: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/demultiplexed/PopA_01.2.fq
+    PopA_01.alleles: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/ustacks/PopA_01.alleles.tsv
+    PopA_01.matches: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/sstacks/PopA_01.matches.tsv
+    PopA_01.snps: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/ustacks/PopA_01.snps.tsv
+    PopA_01.tags: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/ustacks/PopA_01.tags.tsv
+    PopA_02: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/demultiplexed/PopA_02.2.fq
+    PopA_02.alleles: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/ustacks/PopA_02.alleles.tsv
+    PopA_02.matches: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/sstacks/PopA_02.matches.tsv
+    PopA_02.snps: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/ustacks/PopA_02.snps.tsv
+    PopA_02.tags: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/ustacks/PopA_02.tags.tsv
+    catalog.alleles: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/cstacks/catalog.alleles.tsv
+    catalog.snps: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/cstacks/catalog.snps.tsv
+    catalog.tags: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/cstacks/catalog.tags.tsv
     popmap: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/stacks2/test-data/denovo_map/popmap_cstacks.tsv
   2: *id578
 stacks2/stacks_ustacks.xml: {}
@@ -5805,6 +5951,13 @@ trinity/analyze_diff_expr.xml:
   0: &id600
     additional_params|GO_enrichment|GO_annots: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/trinity/test-data/count/trinotate/go_annotations.txt
     additional_params|GO_enrichment|gene_lengths: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/trinity/test-data/count/trinotate/genes.lengths.txt
+    input.matrix.wt_37_vs_wt_GSNO.DESeq2: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/trinity/test-data/count/exp_diff/input.matrix.wt_37_vs_wt_GSNO.DESeq2.DE_results
+    input.matrix.wt_37_vs_wt_GSNO.DESeq2.DE_results: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/trinity/test-data/count/exp_diff/input.matrix.wt_37_vs_wt_GSNO.DESeq2.DE_results
+    input.matrix.wt_37_vs_wt_ph8.DESeq2: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/trinity/test-data/count/exp_diff/input.matrix.wt_37_vs_wt_ph8.DESeq2.DE_results
+    input.matrix.wt_37_vs_wt_ph8.DESeq2.DE_results: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/trinity/test-data/count/exp_diff/input.matrix.wt_37_vs_wt_ph8.DESeq2.DE_results
+    input.matrix.wt_GSNO_vs_wt_ph8.DESeq2: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/trinity/test-data/count/exp_diff/input.matrix.wt_GSNO_vs_wt_ph8.DESeq2.DE_results
+    input.matrix.wt_GSNO_vs_wt_ph8.DESeq2.DE_results: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/trinity/test-data/count/exp_diff/input.matrix.wt_GSNO_vs_wt_ph8.DESeq2.DE_results
+    input.matrix.wt_GSNO_vs_wt_ph8.DESeq2.count_matrix: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/trinity/test-data/count/exp_diff/input.matrix.wt_GSNO_vs_wt_ph8.DESeq2.count_matrix
     matrix: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/trinity/test-data/count/qcheck/matrix.counts.matrix
     samples: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/trinity/test-data/count/samples.txt
   1: *id600
@@ -5841,8 +5994,10 @@ trinity/super_transcripts.xml:
     assembly: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/trinity/test-data/raw/Trinity.fasta
 trinity/trinity.xml:
   2: &id603
+    forward: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/trinity/test-data/reads.left.fq.gz
     input: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/trinity/test-data/reads.left.fq
     left_input: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/trinity/test-data/reads.left.fq
+    reverse: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/trinity/test-data/reads.right.fq.gz
     right_input: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/trinity/test-data/reads.right.fq
   3: *id603
   4: *id603
@@ -5929,8 +6084,10 @@ umi_tools/umi-tools_dedup.xml:
   6: *id613
 umi_tools/umi-tools_extract.xml:
   0: &id614
+    forward: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/umi_tools/test-data/t_R1.fastq
     input_type_cond|input_read1: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/umi_tools/test-data/read_R1.200.gz
     input_type_cond|input_read2: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/umi_tools/test-data/read_R2.200.gz
+    reverse: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/umi_tools/test-data/t_R2.fastq
     whitelist: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/umi_tools/test-data/scrb_seq_barcodes
   1: *id614
   3: *id614
@@ -5945,15 +6102,19 @@ umi_tools/umi-tools_group.xml:
   4: *id615
 umi_tools/umi-tools_whitelist.xml:
   0: &id616
+    forward: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/umi_tools/test-data/t_R1.fastq.gz
     input_type_cond|input_read1: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/umi_tools/test-data/testYYY.40k.fastq.gz
     input_type_cond|input_read2: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/umi_tools/test-data/t_R2.fastq.gz
+    reverse: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/umi_tools/test-data/t_R2.fastq.gz
   1: *id616
   3: *id616
 unicycler/unicycler.xml:
   0: &id617
+    forward: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/unicycler/test-data/phix_f.fq.gz
     long: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/unicycler/test-data/only_long.fasta
     paired_unpaired|fastq_input1: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/unicycler/test-data/phix_f.fq.gz
     paired_unpaired|fastq_input2: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/unicycler/test-data/phix_r.fq.gz
+    reverse: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/unicycler/test-data/phix_r.fq.gz
   1: *id617
   3: *id617
 usher/matutils.xml:
@@ -5998,8 +6159,10 @@ valet/valet.xml:
     assembly_2|assembly_fasta: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/valet/test-data/c_rudii_relocation.fna
     assembly_3|assembly_fasta: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/valet/test-data/c_rudii_reloc_dup.fna
     coverage_file: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/valet/test-data/carsonella_asm.cvg
+    forward: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/valet/test-data/lib1.1.fastq
     input_reads|paired_input_reads|paired_reads_0|mate_1: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/valet/test-data/lib1.1.fastq
     input_reads|paired_input_reads|paired_reads_0|mate_2: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/valet/test-data/lib1.2.fastq
+    reverse: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/valet/test-data/lib1.2.fastq
   1: *id620
 vardict/vardict.xml:
   0: &id621
@@ -6122,21 +6285,38 @@ vsnp/vsnp_add_zero_coverage.xml:
   1: *id631
 vsnp/vsnp_build_tables.xml:
   0:
+    Mbovis-01D6_snps.json: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/vsnp/test-data/Mbovis-01D6_avg_mq.json
+    Mbovis-01D6_snps.newick: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/vsnp/test-data/Mbovis-01D6_snps.newick
+    Mbovis-01D_snps.json: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/vsnp/test-data/Mbovis-01D_avg_mq.json
+    Mbovis-01D_snps.newick: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/vsnp/test-data/Mbovis-01D_snps.newick
+    Mbovis-01_snps.json: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/vsnp/test-data/Mbovis-01_avg_mq.json
+    Mbovis-01_snps.newick: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/vsnp/test-data/Mbovis-01_snps.newick
     input_avg_mq_json: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/vsnp/test-data/input_avg_mq_json.json
     input_newick: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/vsnp/test-data/input_newick.newick
     input_snps_json: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/vsnp/test-data/input_snps_json.json
 vsnp/vsnp_determine_ref_from_data.xml:
   0: &id632
+    forward: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/vsnp/test-data/CMC_20E1_R1.fastq.gz
     read1: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/vsnp/test-data/CMC_20E1_R1.fastq.gz
     read2: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/vsnp/test-data/CMC_20E1_R2.fastq.gz
+    reverse: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/vsnp/test-data/CMC_20E1_R2.fastq.gz
   1: *id632
 vsnp/vsnp_get_snps.xml:
   0:
+    01_1787_FL_Zoo_Jaguar.vcf: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/vsnp/test-data/01_1787_FL_Zoo_Jaguar.vcf
+    02_0585_COA_TX_Fed.vcf: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/vsnp/test-data/02_0585_COA_TX_Fed.vcf
+    02_5877_MEX_TX_Fed.vcf: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/vsnp/test-data/02_5877_MEX_TX_Fed.vcf
+    BCG_Pasteur_Unknown_FR_SRR8886989.vcf: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/vsnp/test-data/BCG_Pasteur_Unknown_FR_SRR8886989.vcf
+    BCG_Tokyo_Unknown_JP_DRR029468.vcf: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/vsnp/test-data/BCG_Tokyo_Unknown_JP_DRR029468.vcf
+    SRR1792272_zc.vcf: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/vsnp/test-data/SRR1792272_zc.vcf
+    SRR8073662_zc.vcf: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/vsnp/test-data/SRR8073662_zc.vcf
     input_zc_vcf: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/vsnp/test-data/input_zc_vcf.vcf
 vsnp/vsnp_statistics.xml:
   0: &id633
+    forward: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/vsnp/test-data/13-1941-6_S4_L001_R1_600000.fastq.gz
     read1: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/vsnp/test-data/13-1941-6_S4_L001_R1_600000.fastq.gz
     read2: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/vsnp/test-data/13-1941-6_S4_L001_R2_600000.fastq.gz
+    reverse: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/vsnp/test-data/13-1941-6_S4_L001_R2_600000.fastq.gz
     samtools_idxstats: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/vsnp/test-data/samtools_idxstats5.tabular
     vsnp_azc_metrics: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/vsnp/test-data/add_zc_metrics5.tabular
   1: *id633
@@ -6150,8 +6330,10 @@ winnowmap/winnowmap.xml:
   0: &id635
     fastq_input1: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/winnowmap/test-data/bwa-mem-fasta1.fa
     fastq_input2: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/winnowmap/test-data/bwa-mem-fastq2.fq
+    forward: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/winnowmap/test-data/bwa-mem-fastq1.fq
     highfreq_kmers: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/winnowmap/test-data/repetitive_k15.txt
     ref_file: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/winnowmap/test-data/bwa-mem-mt-genome.fa
+    reverse: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/winnowmap/test-data/bwa-mem-fastq2.fq
   1: *id635
   2: *id635
   3: *id635
