@@ -1,0 +1,1614 @@
+- data:
+    meryl__child.fasta:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/meryl/test-data/child.fasta
+      sha: 5223a9704fb4547ed6f1afd7f5da3e2c03531ab2
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 1048576
+  used-by:
+  - meryl
+- data:
+    meryl__read-db.meryldb:
+      filetype: meryldb
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/meryl/test-data/read-db.meryldb
+      sha: 54a3a43c801ff66f88f939edb984cf0fb5720255
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 23375
+  used-by:
+  - meryl
+- data:
+    meryl__maternal.meryldb:
+      filetype: meryldb
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/meryl/test-data/maternal.meryldb
+      sha: 0e04fce1420016f5c6c5fc0bffe139bde65f200c
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 1802
+  used-by:
+  - meryl
+- data:
+    meryl__paternal.fasta:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/meryl/test-data/paternal.fasta
+      sha: b00090b7a825d4c8e6048985d8e0cd58bd9bf95e
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 1048576
+  used-by:
+  - meryl
+- data:
+    meryl__maternal.fasta:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/meryl/test-data/maternal.fasta
+      sha: 8a4caaa79af5374b7806a1d8fea896c35ed9cda5
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 1048576
+  used-by:
+  - meryl
+- data:
+    meryl__child.fasta.gz:
+      filetype: fasta.gz
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/meryl/test-data/child.fasta.gz
+      sha: 4e613ddd9d8aa5a735a6c314fdfbe4c3cb233ac2
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 305258
+  used-by:
+  - meryl
+- data: !!set
+    velvet_optimiser__test_reads.fa: null
+  error: This API returns blobs up to 1 MB in size. The requested blob is too large
+    to fetch via the API, but you can use the Git Data API to request blobs up to
+    100 MB in size.
+- data:
+    idba_ud__merged.fa:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/idba_ud/test-data/merged.fa
+      sha: 7e7b22d9d11d8ae22e7663ed891ccbb285893003
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 34428
+  used-by:
+  - idba_tran
+  - idba_hybrid
+  - idba_ud
+- data:
+    idba_ud__reference.fa:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/idba_ud/test-data/reference.fa
+      sha: 30d4a43deac320c3f859a42ab45c7d72e54e5837
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 23265
+  used-by:
+  - idba_hybrid
+- data:
+    miniasm__mini_reads.fq:
+      filetype: fq
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/miniasm/test-data/mini_reads.fq
+      sha: c16943afce4e8a36f39144c19b619d14a5913966
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 473058
+  used-by:
+  - miniasm
+- data: !!set
+    miniasm__mini_reads.paf.gz: null
+  error: This API returns blobs up to 1 MB in size. The requested blob is too large
+    to fetch via the API, but you can use the Git Data API to request blobs up to
+    100 MB in size.
+- data:
+    miniasm__mini_reads.fq.gz:
+      filetype: gz
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/miniasm/test-data/mini_reads.fq.gz
+      sha: 805248b4d343f39c604489ebee49c06340d4d12c
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 210156
+  used-by:
+  - miniasm
+- data:
+    shasta__nanopore.fasta.gz:
+      filetype: fasta.gz
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/shasta/test-data/nanopore.fasta.gz
+      sha: 495d7ffb6bff15eb56614909fe775534dcea2dd2
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 330862
+  used-by:
+  - shasta
+- data:
+    shasta__out_config2.txt:
+      filetype: txt
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/shasta/test-data/out_config2.txt
+      sha: e7d66ed0d8b304ae2afb5cde4b0530a506ba4b98
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 2388
+  used-by:
+  - shasta
+- data:
+    salsa2__test.fasta:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/salsa2/test-data/test.fasta
+      sha: cdd4e9d615aa0386575d844dc6f4d4155e122556
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - '0102'
+  - 0196
+  - '3125'
+  license: MIT
+  size: 8035
+  used-by:
+  - salsa
+- data:
+    salsa2__test.fai:
+      filetype: fai
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/salsa2/test-data/test.fai
+      sha: 0204321de74deac3464032e28d53422838603364
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - '0102'
+  - 0196
+  - '3125'
+  license: MIT
+  size: 31
+  used-by:
+  - salsa
+- data:
+    salsa2__test.bed:
+      filetype: bed
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/salsa2/test-data/test.bed
+      sha: eb4c30e347a1e8f4db328437f2557c4f5a052c8c
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - '0102'
+  - 0196
+  - '3125'
+  license: MIT
+  size: 4202
+  used-by:
+  - salsa
+- data:
+    salsa2__test.gfa1:
+      filetype: gfa1
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/salsa2/test-data/test.gfa1
+      sha: b2d1b27910b9f0eec914fdd927acb65e93a39e18
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - '0102'
+  - 0196
+  - '3125'
+  license: MIT
+  size: 2957
+  used-by:
+  - salsa
+- data:
+    khmer__random-20-a.fa.part:
+      filetype: part
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/khmer/test-data/random-20-a.fa.part
+      sha: 8c09d60b9f03c3744051281747991d2c21f3e921
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 6524
+  used-by:
+  - khmer_extract_partitions
+- data:
+    khmer__test-abund-read-2.fa:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/khmer/test-data/test-abund-read-2.fa
+      sha: 39e771c9c2443e829d07a004173b76121d6c9265
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 24138
+  used-by:
+  - khmer_count_median
+  - khmer_abundance_distribution_single
+  - khmer_normalize_by_median
+  - khmer_filter_abundance
+  - khmer_filter_below_abundance_cutoff
+  - khmer_abundance_distribution
+- data:
+    khmer__test-abund-read-2.fa.gz:
+      filetype: fasta.gz
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/khmer/test-data/test-abund-read-2.fa.gz
+      sha: 3f1efa96a219513766e5d5c58f0f96f046689dff
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 206
+  used-by:
+  - khmer_normalize_by_median
+  - khmer_abundance_distribution
+- data:
+    khmer__test-abund-read-paired.fa:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/khmer/test-data/test-abund-read-paired.fa
+      sha: 08055b9de1b65dbba5d07db5400baa0a779b98e0
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 838
+  used-by:
+  - khmer_normalize_by_median
+- data: !!set
+    khmer__test-abund-read-2.oxlicg: null
+  error: This API returns blobs up to 1 MB in size. The requested blob is too large
+    to fetch via the API, but you can use the Git Data API to request blobs up to
+    100 MB in size.
+- data:
+    khmer__random-20-a.fa:
+      filetype: fa
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/khmer/test-data/random-20-a.fa
+      sha: 0e892625a0a005be4fb4f00549ce38d2753f9b27
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 6326
+  used-by:
+  - khmer_partition
+- data:
+    khmer__test-abund-read-2.large.oxlicg:
+      filetype: oxlicg
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/khmer/test-data/test-abund-read-2.large.oxlicg
+      sha: f9538d16f81144f59be78f80ac0fbb94ee0cd189
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 99976
+  used-by:
+  - khmer_filter_below_abundance_cutoff
+- data:
+    khmer__test-abund-read-2.fq.gz:
+      filetype: gz
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/khmer/test-data/test-abund-read-2.fq.gz
+      sha: f3aa1df9e22ff5c4b1f7f046424a99efc53f95f8
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 269
+  used-by:
+  - khmer_abundance_distribution_single
+- data:
+    unicycler__phix_f.fq.gz:
+      filetype: fastqsanger
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/unicycler/test-data/phix_f.fq.gz
+      sha: 34dbbcb1fa856d361c1966f9942d79c860182c4b
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - '3168'
+  - 0196
+  - '3301'
+  - '0622'
+  license: MIT
+  size: 486359
+  used-by:
+  - unicycler
+- data:
+    unicycler__phix_r.fq.gz:
+      filetype: fastqsanger
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/unicycler/test-data/phix_r.fq.gz
+      sha: 619c40d1fbb3a638eb275b0bb2b23875d3cbe58d
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - '3168'
+  - 0196
+  - '3301'
+  - '0622'
+  license: MIT
+  size: 599202
+  used-by:
+  - unicycler
+- data:
+    unicycler__onp.fa:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/unicycler/test-data/onp.fa
+      sha: e7e39253a5cfd27aaf6b2eb01537618de3871486
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - '3168'
+  - 0196
+  - '3301'
+  - '0622'
+  license: MIT
+  size: 5504
+  used-by:
+  - unicycler
+- data:
+    unicycler__only_long.fasta:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/unicycler/test-data/only_long.fasta
+      sha: e6808074292538d0e231698803cf633621ab8ef8
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - '3168'
+  - 0196
+  - '3301'
+  - '0622'
+  license: MIT
+  size: 175454
+  used-by:
+  - unicycler
+- data:
+    novoplasty__seed.fasta:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/novoplasty/test-data/seed.fasta
+      sha: 084f7b30738d86c94be6b6b2eee50da7c3c638b9
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 16377
+  used-by:
+  - novoplasty
+- data:
+    novoplasty__forward.fasta.gz:
+      filetype: gz
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/novoplasty/test-data/forward.fasta.gz
+      sha: 3a494b56b4fc8267b5a2e8584ca1e04291462a81
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 38722
+  used-by:
+  - novoplasty
+- data:
+    novoplasty__reverse.fasta.gz:
+      filetype: gz
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/novoplasty/test-data/reverse.fasta.gz
+      sha: 4271022e3a94938351f78cbe23e051a5b82bc5bd
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 39702
+  used-by:
+  - novoplasty
+- data:
+    novoplasty__reference.fasta.gz:
+      filetype: gz
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/novoplasty/test-data/reference.fasta.gz
+      sha: ba3f0672db28dc69a362793fbde9aa14eb184882
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 5172
+  used-by:
+  - novoplasty
+- data:
+    novoplasty__combined.fasta.gz:
+      filetype: gz
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/novoplasty/test-data/combined.fasta.gz
+      sha: 673d0322b1bed71d8ba87a9f4ea3a2c3549eeab7
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 77669
+  used-by:
+  - novoplasty
+- data:
+    novoplasty__combined.fasta:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/novoplasty/test-data/combined.fasta
+      sha: d1e4e10c35b3b2ada583773764b394296d58157a
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 321452
+  used-by:
+  - novoplasty
+- data:
+    novoplasty__reference.fasta:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/novoplasty/test-data/reference.fasta
+      sha: 084f7b30738d86c94be6b6b2eee50da7c3c638b9
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 16377
+  used-by:
+  - novoplasty
+- data:
+    novoplasty__chloroplast.fasta:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/novoplasty/test-data/chloroplast.fasta
+      sha: e960c7de1684878b3c3157c851f49fefe43730c8
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 12882
+  used-by:
+  - novoplasty
+- data:
+    taxonomy_krona_chart__taxonomy_data.tax:
+      filetype: taxonomy
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/taxonomy_krona_chart/test-data/taxonomy_data.tax
+      sha: 514b654ff92cdbd6fa700b98631bb2b397c8c95b
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - '3174'
+  license: MIT
+  size: 18610
+  used-by:
+  - taxonomy_krona_chart
+- data: !!set
+    spades__ecoli_1K_1.fq: null
+  error: Not Found
+- data: !!set
+    spades__ecoli_1K_2.fq: null
+  error: Not Found
+- data: !!set
+    spades__ecoli_1K_1.fasta: null
+  error: Not Found
+- data: !!set
+    spades__ecoli_1K_2.fasta: null
+  error: Not Found
+- data: !!set
+    spades__ecoli_1K_1.fq.gz: null
+  error: Not Found
+- data: !!set
+    spades__ecoli_1K_2.fq.gz: null
+  error: Not Found
+- data:
+    shovill__mutant_R1.fastq:
+      filetype: fastqsanger
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/shovill/test-data/mutant_R1.fastq
+      sha: 1521e50f1f344720a16c8cf62860a05133d066da
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - 0196
+  - '3301'
+  - '0622'
+  license: MIT
+  size: 342934
+  used-by:
+  - shovill
+- data:
+    shovill__mutant_R2.fastq:
+      filetype: fastqsanger
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/shovill/test-data/mutant_R2.fastq
+      sha: c3956bc318e0421e8fa83961de284f93ae99f28e
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - 0196
+  - '3301'
+  - '0622'
+  license: MIT
+  size: 342934
+  used-by:
+  - shovill
+- data:
+    shovill__mutant_R1.fastq.gz:
+      filetype: fastqsanger
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/shovill/test-data/mutant_R1.fastq.gz
+      sha: 93121f73470e1795442fbf8c9a0c6917a3e62bb6
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - 0196
+  - '3301'
+  - '0622'
+  license: MIT
+  size: 31084
+  used-by:
+  - shovill
+- data:
+    shovill__mutant_R2.fastq.gz:
+      filetype: fastqsanger
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/shovill/test-data/mutant_R2.fastq.gz
+      sha: 0a3fca408481e7bce81f907242d338dbe7bd68c0
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - 0196
+  - '3301'
+  - '0622'
+  license: MIT
+  size: 31339
+  used-by:
+  - shovill
+- data:
+    megahit__refExample.fa:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/megahit/test-data/refExample.fa
+      sha: 44e0125d4b95a2025cd91606fca9e3fdccb195c3
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - 0196
+  - '3174'
+  - '3168'
+  - '0610'
+  license: MIT
+  size: 1271
+  used-by:
+  - megahit
+- data:
+    megahit__interleaved-fq.fa:
+      filetype: fa
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/megahit/test-data/interleaved-fq.fa
+      sha: 1c8949f6db73c7bb02c4ce9c8fc66dadd9d1e9d9
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - 0196
+  - '3174'
+  - '3168'
+  - '0610'
+  license: MIT
+  size: 29513
+  used-by:
+  - megahit
+- data:
+    megahit__paired-fq1.fa:
+      filetype: fa
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/megahit/test-data/paired-fq1.fa
+      sha: a4826607aa28d174ce76c356b5a10712f840cbf1
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - 0196
+  - '3174'
+  - '3168'
+  - '0610'
+  license: MIT
+  size: 29847
+  used-by:
+  - megahit
+- data:
+    megahit__paired-fq2.fa:
+      filetype: fa
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/megahit/test-data/paired-fq2.fa
+      sha: 73959a304066a254e051b00d63fce4b14e9cde84
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - 0196
+  - '3174'
+  - '3168'
+  - '0610'
+  license: MIT
+  size: 29847
+  used-by:
+  - megahit
+- data:
+    purge_dups__assembly_test.paf:
+      filetype: paf
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/purge_dups/test-data/assembly_test.paf
+      sha: 2d338e4f1b6e169b4ae420fc6d8b87c0ba844516
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 72499
+  used-by:
+  - purge_dups
+- data:
+    purge_dups__test.cov:
+      filetype: tabular
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/purge_dups/test-data/test.cov
+      sha: a714e55485e9778241d86a8d5fbb9c13dbaee6ac
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 222
+  used-by:
+  - purge_dups
+- data:
+    purge_dups__cutoffs.tsv:
+      filetype: tabular
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/purge_dups/test-data/cutoffs.tsv
+      sha: 5536c2027b4d36f09b7661e89301d427cb92f6f2
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 13
+  used-by:
+  - purge_dups
+- data:
+    purge_dups__assembly_test.paf.gz:
+      filetype: paf.gz
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/purge_dups/test-data/assembly_test.paf.gz
+      sha: b77cf56b7b72208335e1c798759ba55cb83397f1
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 10545
+  used-by:
+  - purge_dups
+- data:
+    purge_dups__assembly_test.fasta:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/purge_dups/test-data/assembly_test.fasta
+      sha: 257230b9486fe074177b23b496536f9cf8cdb75b
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 10206
+  used-by:
+  - purge_dups
+- data:
+    purge_dups__test.bam:
+      filetype: bam
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/purge_dups/test-data/test.bam
+      sha: 95c65de857205099e47815d35fa2ae4861d9fba4
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 3592
+  used-by:
+  - purge_dups
+- data:
+    purge_dups__test.stat:
+      filetype: stat
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/purge_dups/test-data/test.stat
+      sha: c637ba0cce94b5d84278d749eb1b55659f8acaab
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 2909
+  used-by:
+  - purge_dups
+- data:
+    purge_dups__split_out.fasta:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/purge_dups/test-data/split_out.fasta
+      sha: 733d4960149811a8ad0903202c031e3115502102
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 10457
+  used-by:
+  - purge_dups
+- data:
+    purge_dups__dups.bed:
+      filetype: bed
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/purge_dups/test-data/dups.bed
+      sha: 718699b2fb087b6abe13135698cc5f67ad4f1c73
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 53
+  used-by:
+  - purge_dups
+- data:
+    fermikit__small.fa.gz:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/fermikit/test-data/small.fa.gz
+      sha: e7f2edb129a1546b45ac34a9c4e6214b4b171b1f
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 8309
+  used-by:
+  - fermikit_variants
+- data:
+    fermikit__aligned_contigs.bam:
+      filetype: bam
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/fermikit/test-data/aligned_contigs.bam
+      sha: e82031516f5e3640c1d134484b2a2f73d2ffa6f6
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 24665
+  used-by:
+  - fermikit_variants
+- data:
+    ragtag__genome.fna:
+      filetype: fna
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/ragtag/test-data/genome.fna
+      sha: 73b799be314be09e4c09ccca77c2861bcf8aa1ff
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 506880
+  used-by:
+  - ragtag
+- data:
+    ragtag__contigs.fna:
+      filetype: fna
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/ragtag/test-data/contigs.fna
+      sha: 8c88ff785a71102fb7bf2198c6aa56bae1569c71
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 506880
+  used-by:
+  - ragtag
+- data:
+    ragtag__reference_headers_skip.txt:
+      filetype: txt
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/ragtag/test-data/reference_headers_skip.txt
+      sha: 28cc02eb1eb3a67ca792588e39982cf8701ab88d
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 95
+  used-by:
+  - ragtag
+- data:
+    ragtag__query_headers_skip.txt:
+      filetype: txt
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/ragtag/test-data/query_headers_skip.txt
+      sha: 28cc02eb1eb3a67ca792588e39982cf8701ab88d
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 95
+  used-by:
+  - ragtag
+- data:
+    ragtag__annotation.gff:
+      filetype: gff
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/ragtag/test-data/annotation.gff
+      sha: 5b1f25f6d84d515cf9cf32afc3748aa7b76968da
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 207188
+  used-by:
+  - ragtag
+- data:
+    ragtag__correct_fasta_01.fasta:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/ragtag/test-data/correct_fasta_01.fasta
+      sha: 00c26e7055994094cc8fd40be400903a53acf9c1
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 103145
+  used-by:
+  - ragtag
+- data:
+    megahit_contig2fastg__k21.contigs.fa:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/megahit_contig2fastg/test-data/k21.contigs.fa
+      sha: d74fc1a62cf3c2761708616295068e2d73a3f76c
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - 0196
+  - '3174'
+  - '3168'
+  - '0610'
+  license: MIT
+  size: 612
+  used-by:
+  - megahit_contig2fastg
+- data:
+    minia__ec.fa:
+      filetype: fa
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/minia/test-data/ec.fa
+      sha: bb0a3a77edd9f86e3023ec9f79ee2a5595e7c426
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - 0196
+  license: MIT
+  size: 6627
+  used-by:
+  - minia
+- data:
+    mitobim__Tthymallus-150bp-300sd50-interleaved.fastq:
+      filetype: fastqsanger
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/mitobim/test-data/Tthymallus-150bp-300sd50-interleaved.fastq
+      sha: d6a9ac5eab8aa3829fe1a11f2d4f36e7c4d9a755
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 171822
+  used-by:
+  - mitobim
+- data:
+    mitobim__initial-mapping-testpool-to-Salpinus-mt_out.maf:
+      filetype: maf
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/mitobim/test-data/initial-mapping-testpool-to-Salpinus-mt_out.maf
+      sha: 74cfc08dbba4023edf095f8582c33d380f5b3c96
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 350260
+  used-by:
+  - mitobim
+- data:
+    mitobim__Salpinus-mt-genome-NC_000861.fasta:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/mitobim/test-data/Salpinus-mt-genome-NC_000861.fasta
+      sha: b758c108fc2b8a06b11b9221cdf077fbee55159b
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 16691
+  used-by:
+  - mitobim
+- data:
+    mitobim__Tthymallus-COI-partial-HQ961018.fasta:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/mitobim/test-data/Tthymallus-COI-partial-HQ961018.fasta
+      sha: 0de8ab2dde8ebac2bf98d8340d3b60c01b9ecfec
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 782
+  used-by:
+  - mitobim
+- data:
+    TrimNs__in.fasta:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/TrimNs/test-data/in.fasta
+      sha: aa94510e3d6de6de7b7b73e0212e1b7e6c10a0b4
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 1762
+  used-by:
+  - trimns
+- data:
+    hypo__draft_genome.fasta:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/hypo/test-data/draft_genome.fasta
+      sha: 8ec79b7686af75ce7835dcbc2c7f3ae3c8a3a8eb
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 10132
+  used-by:
+  - hypo
+- data:
+    hypo__short_reads.bam:
+      filetype: bam
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/hypo/test-data/short_reads.bam
+      sha: ccdf08d0f9c217b8e4a7dc0b3abf5b1c3e2a6d6d
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 106626
+  used-by:
+  - hypo
+- data:
+    hypo__long_reads.bam:
+      filetype: bam
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/hypo/test-data/long_reads.bam
+      sha: e3923335ad5f28cf6c08d5d194e5448ce245429c
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 117537
+  used-by:
+  - hypo
+- data:
+    trycycler__reconciled_cluster_01.fasta:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/trycycler/test-data/reconciled_cluster_01.fasta
+      sha: 9deb8657d5d71e068932bd88c8480eebffc0b8d5
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 30085
+  used-by:
+  - trycycler_consensus
+  - trycycler_partition
+- data:
+    trycycler__reads.fastq.gz:
+      filetype: gz
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/trycycler/test-data/reads.fastq.gz
+      sha: adbf027fd34eb94a1e4f9cdec6adf33e685799e3
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 528995
+  used-by:
+  - trycycler_cluster
+  - trycycler_subsample
+  - trycycler_reconcile_msa
+  - trycycler_partition
+- data:
+    trycycler__cluster_01.fasta:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/trycycler/test-data/cluster_01.fasta
+      sha: 04450352c4c163bf9dee2e5ee4a605d8738a9598
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 30079
+  used-by:
+  - trycycler_reconcile_msa
+- data:
+    trycycler__aligned_cluster_01.fasta:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/trycycler/test-data/aligned_cluster_01.fasta
+      sha: a11529ad078a4e86cdcb6f2072c4021291fb5c4d
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 30100
+  used-by:
+  - trycycler_consensus
+- data:
+    trycycler__partition_01.fastq:
+      filetype: fastq
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/trycycler/test-data/partition_01.fastq
+      sha: ff21ccbddfb3230cfde57942bd2bc27fa3ce449b
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 12078
+  used-by:
+  - trycycler_consensus
+- data:
+    trycycler__reconciled_cluster_02.fasta:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/trycycler/test-data/reconciled_cluster_02.fasta
+      sha: 9deb8657d5d71e068932bd88c8480eebffc0b8d5
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 30085
+  used-by:
+  - trycycler_consensus
+- data:
+    trycycler__aligned_cluster_02.fasta:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/trycycler/test-data/aligned_cluster_02.fasta
+      sha: a11529ad078a4e86cdcb6f2072c4021291fb5c4d
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 30100
+  used-by:
+  - trycycler_consensus
+- data:
+    trycycler__reconciled_cluster_03.fasta:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/trycycler/test-data/reconciled_cluster_03.fasta
+      sha: 9deb8657d5d71e068932bd88c8480eebffc0b8d5
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 30085
+  used-by:
+  - trycycler_consensus
+- data:
+    trycycler__aligned_cluster_03.fasta:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/trycycler/test-data/aligned_cluster_03.fasta
+      sha: 0f6429209f0ae876a079b52e42249c20ff45ff20
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 30100
+  used-by:
+  - trycycler_consensus
+- data:
+    flash__flash_forward_in1.fastqsanger:
+      filetype: fastqsanger
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/flash/test-data/flash_forward_in1.fastqsanger
+      sha: 38eab136afb6c347dd4d57e03c06f4e730a07349
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - 0196
+  - '3168'
+  license: MIT
+  size: 219064
+  used-by:
+  - flash
+- data:
+    flash__flash_reverse_in1.fastqsanger:
+      filetype: fastqsanger
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/flash/test-data/flash_reverse_in1.fastqsanger
+      sha: 53c3d806c7584d5dd7e1c837e030a2f251c0f985
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - 0196
+  - '3168'
+  license: MIT
+  size: 219064
+  used-by:
+  - flash
+- data:
+    flash__flash_forward_in2.fastqsanger:
+      filetype: fastqsanger
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/flash/test-data/flash_forward_in2.fastqsanger
+      sha: 38eab136afb6c347dd4d57e03c06f4e730a07349
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - 0196
+  - '3168'
+  license: MIT
+  size: 219064
+  used-by:
+  - flash
+- data:
+    flash__flash_reverse_in2.fastqsanger:
+      filetype: fastqsanger
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/flash/test-data/flash_reverse_in2.fastqsanger
+      sha: 53c3d806c7584d5dd7e1c837e030a2f251c0f985
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - 0196
+  - '3168'
+  license: MIT
+  size: 219064
+  used-by:
+  - flash
+- data:
+    flash__flash_forward_in3.fastqillumina:
+      filetype: fastqillumina
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/flash/test-data/flash_forward_in3.fastqillumina
+      sha: d4c1743add0c90dabeb334405b835fcee99e0166
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - 0196
+  - '3168'
+  license: MIT
+  size: 87545
+  used-by:
+  - flash
+- data:
+    flash__flash_reverse_in3.fastqillumina:
+      filetype: fastqillumina
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/flash/test-data/flash_reverse_in3.fastqillumina
+      sha: 878545c7e717c51cb2ff11b0a75471f7df0e88bc
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - 0196
+  - '3168'
+  license: MIT
+  size: 87545
+  used-by:
+  - flash
+- data:
+    flash__flash_forward_in4.fastqsanger.gz:
+      filetype: fastqsanger.gz
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/flash/test-data/flash_forward_in4.fastqsanger.gz
+      sha: 15c1d5ba03ef797303f4d467de17e0e67478e0fa
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - 0196
+  - '3168'
+  license: MIT
+  size: 35973
+  used-by:
+  - flash
+- data:
+    flash__flash_reverse_in4.fastqsanger.gz:
+      filetype: fastqsanger.gz
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/flash/test-data/flash_reverse_in4.fastqsanger.gz
+      sha: 3f8a8e2b26c0a2cc641f4e87b8b19fb9af26f062
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - 0196
+  - '3168'
+  license: MIT
+  size: 35769
+  used-by:
+  - flash
+- data:
+    flash__flash_forward_in5.fastqsanger.gz:
+      filetype: fastqsanger.gz
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/flash/test-data/flash_forward_in5.fastqsanger.gz
+      sha: 57c36139406df305353c4a549cd1e0461789b1bd
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - 0196
+  - '3168'
+  license: MIT
+  size: 36008
+  used-by:
+  - flash
+- data:
+    flash__flash_reverse_in5.fastqsanger.gz:
+      filetype: fastqsanger.gz
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/flash/test-data/flash_reverse_in5.fastqsanger.gz
+      sha: 4ec6866d150a419c1b93896d5221abcce371e199
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - 0196
+  - '3168'
+  license: MIT
+  size: 35798
+  used-by:
+  - flash
+- data:
+    disco__ecoli_1K_1.fq:
+      filetype: fq
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/disco/test-data/ecoli_1K_1.fq
+      sha: fdeb9905151679084f4096adb6efc141a6dc5d21
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - '1317'
+  license: MIT
+  size: 427606
+  used-by:
+  - disco
+- data:
+    disco__ecoli_1K_2.fq:
+      filetype: fq
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/disco/test-data/ecoli_1K_2.fq
+      sha: 4b2489031c34050ec4b0d2cb98a657bec81c34fe
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - '1317'
+  license: MIT
+  size: 424545
+  used-by:
+  - disco
+- data:
+    disco__ecoli_1K_1.fq.gz:
+      filetype: fastq.gz
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/disco/test-data/ecoli_1K_1.fq.gz
+      sha: 51412f6a0f860c910d74659d0149e379447424a2
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - '1317'
+  license: MIT
+  size: 117651
+  used-by:
+  - disco
+- data:
+    hisat2__phiX.fa:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/hisat2/test-data/phiX.fa
+      sha: 53df885dc4807014beec97acbb7690eb492e8da8
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - '3170'
+  license: MIT
+  size: 5473
+  used-by:
+  - hisat2
+- data:
+    hisat2__hisat_input_1_forward.fastq:
+      filetype: fastqsanger
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/hisat2/test-data/hisat_input_1_forward.fastq
+      sha: 3e328a610224efbc18144d537ceab8fc734db022
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - '3170'
+  license: MIT
+  size: 1785
+  used-by:
+  - hisat2
+- data:
+    hisat2__hisat_input_1_reverse.fastq:
+      filetype: fastqsanger
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/hisat2/test-data/hisat_input_1_reverse.fastq
+      sha: 4f67807b541bf1461d794c8ab9d8dc7eafdfcaeb
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - '3170'
+  license: MIT
+  size: 1785
+  used-by:
+  - hisat2
+- data:
+    hisat2__hisat_input_2_forward.fastq:
+      filetype: fastqsanger
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/hisat2/test-data/hisat_input_2_forward.fastq
+      sha: 128d779d2fb1e382eb1a032042334c5cc814c36c
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - '3170'
+  license: MIT
+  size: 90088
+  used-by:
+  - hisat2
+- data:
+    hisat2__hisat_input_2_reverse.fastq:
+      filetype: fastqsanger
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/hisat2/test-data/hisat_input_2_reverse.fastq
+      sha: ae501a39e2d59cfc594be02bd16796589bfcf24d
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - '3170'
+  license: MIT
+  size: 90088
+  used-by:
+  - hisat2
+- data:
+    hisat2__test_unaligned_reads.fasta:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/hisat2/test-data/test_unaligned_reads.fasta
+      sha: d3246968172ade3c17e69d179c17cf3aec24a5d1
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - '3170'
+  license: MIT
+  size: 102
+  used-by:
+  - hisat2
+- data:
+    hisat2__hisat_input_2_forward.fastq.gz:
+      filetype: fastqsanger.gz
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/hisat2/test-data/hisat_input_2_forward.fastq.gz
+      sha: c3e81c590b2c6405fb565c9fd910fbeaeb745b3d
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - '3170'
+  license: MIT
+  size: 14913
+  used-by:
+  - hisat2
+- data:
+    hisat2__hisat_input_2_reverse.fastq.gz:
+      filetype: fastqsanger.gz
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/hisat2/test-data/hisat_input_2_reverse.fastq.gz
+      sha: dc35a85a85094132042b3c672e9bd66bfc517ae5
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - '3170'
+  license: MIT
+  size: 15113
+  used-by:
+  - hisat2
+- data:
+    hisat2__hisat_input_2_forward.fastq.bz2:
+      filetype: fastqsanger.bz2
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/hisat2/test-data/hisat_input_2_forward.fastq.bz2
+      sha: b3835c636ed764934bb0eb8d25ea6f0c3dafc5cc
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - '3170'
+  license: MIT
+  size: 11889
+  used-by:
+  - hisat2
+- data:
+    hisat2__hisat_input_2_reverse.fastq.bz2:
+      filetype: fastqsanger.bz2
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/hisat2/test-data/hisat_input_2_reverse.fastq.bz2
+      sha: c3b28fa8be68a0a9abdcd157c433de2260f90398
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - '3170'
+  license: MIT
+  size: 11947
+  used-by:
+  - hisat2
+- data:
+    hisat2__hisat_input_1_interleaved.fastq:
+      filetype: fastqsanger
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/hisat2/test-data/hisat_input_1_interleaved.fastq
+      sha: b6dd5786dd7b64eeb6c9fcfe7f63703e81f27430
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - '3170'
+  license: MIT
+  size: 3570
+  used-by:
+  - hisat2
+- data:
+    hisat2__hisat_input_1_interleaved.fastq.bz2:
+      filetype: fastqsanger.bz2
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/hisat2/test-data/hisat_input_1_interleaved.fastq.bz2
+      sha: 935d37d1e50825fe7bc06c33b41e2ac4f04547f2
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - '3170'
+  license: MIT
+  size: 676
+  used-by:
+  - hisat2
+- data:
+    hisat2__hisat_input_1_interleaved.fastq.gz:
+      filetype: fastqsanger.gz
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/hisat2/test-data/hisat_input_1_interleaved.fastq.gz
+      sha: ea8186364acac700bcc2c00ac47e6a4fe58975a7
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - '3170'
+  license: MIT
+  size: 782
+  used-by:
+  - hisat2
+- data:
+    hisat2__hisat_input_1_interleaved.fasta:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/hisat2/test-data/hisat_input_1_interleaved.fasta
+      sha: 1993f5b2cf8275e0e47a4cecb6cd8cde0c0cc52d
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - '3170'
+  license: MIT
+  size: 2110
+  used-by:
+  - hisat2
+- data:
+    hisat2__hisat_input_1_split_forward.fastq:
+      filetype: fastqsanger
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/hisat2/test-data/hisat_input_1_split_forward.fastq
+      sha: 0625f657e536fc788cf254a37b01f4a427fa79d3
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - '3170'
+  license: MIT
+  size: 1785
+  used-by:
+  - hisat2
+- data:
+    raven__ERA476754.fastq.gz:
+      filetype: fastq.gz
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/raven/test-data/ERA476754.fastq.gz
+      sha: ae8c4bdd14a169a0b8931ef5a5c91bc1337fc465
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 776255
+  used-by:
+  - raven
+- data:
+    jellyfish__test.fastq:
+      filetype: fastq
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/jellyfish/test-data/test.fastq
+      sha: 986d93f3a5d8bb3d5a79a39be3d6faa588f5dfdd
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 105230
+  used-by:
+  - jellyfish
+- data:
+    jellyfish__out.jf:
+      filetype: jellyfish
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/jellyfish/test-data/out.jf
+      sha: 26199211cb0f927fc75e8c448b0de3d80a47094c
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 366972
+  used-by:
+  - jellyfish
+- data:
+    abyss__assembly_sample-R1.fastq.gz:
+      filetype: fastqsanger
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/abyss/test-data/assembly_sample-R1.fastq.gz
+      sha: ff69ca0b76634101757ea81994c474e370ad73c2
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - 0196
+  license: MIT
+  size: 1849
+  used-by:
+  - abyss-pe
+- data:
+    abyss__assembly_sample-R2.fastq.gz:
+      filetype: fastqsanger
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/abyss/test-data/assembly_sample-R2.fastq.gz
+      sha: d23e8470e7625855199ad5bad2162b86ace5991a
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - 0196
+  license: MIT
+  size: 2128
+  used-by:
+  - abyss-pe
+- data:
+    velvet__velvetg_paired.out:
+      filetype: velvet
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/velvet/test-data/velvetg_paired.out
+      sha: 6c3f6073167afea40862bde7c84665e93da96ddc
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - 0196
+  license: MIT
+  size: 314
+  used-by:
+  - velvetg
+- data:
+    velvet__R1.fastq:
+      filetype: fastqsanger
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/velvet/test-data/R1.fastq
+      sha: d42be1cd2bee89a21755c488c434fe6b35079149
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - 0196
+  license: MIT
+  size: 414336
+  used-by:
+  - velveth
+- data:
+    velvet__R2.fastq:
+      filetype: fastqsanger
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/velvet/test-data/R2.fastq
+      sha: d6757b26e3c5ef38bf4c4d8c50ef3808d05c26c8
+      unpack: false
+  doc: Placeholder doc
+  edams:
+  - 0196
+  license: MIT
+  size: 414336
+  used-by:
+  - velveth
+- data:
+    quast__contigs1.fna:
+      filetype: fna
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/quast/test-data/contigs1.fna
+      sha: 34bf9b392339adbfc74880aa2fbfc0f54ab41477
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 6833
+  used-by:
+  - quast
+- data:
+    quast__contigs2.fna:
+      filetype: fna
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/quast/test-data/contigs2.fna
+      sha: 2c985a0af7672670e35dd0c1d41349ff5816832a
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 6781
+  used-by:
+  - quast
+- data:
+    quast__reference.fna:
+      filetype: fna
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/quast/test-data/reference.fna
+      sha: 2c985a0af7672670e35dd0c1d41349ff5816832a
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 6781
+  used-by:
+  - quast
+- data:
+    quast__genes.gff:
+      filetype: gff
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/quast/test-data/genes.gff
+      sha: 8fc62f51f8440fe31c6fedd1076f13619de5d862
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 4263
+  used-by:
+  - quast
+- data:
+    quast__operons.bed:
+      filetype: bed
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/quast/test-data/operons.bed
+      sha: 2744c43947cf456951ea45800e2dbf62de6e6621
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 141098
+  used-by:
+  - quast
+- data:
+    quast__contigs3.fasta:
+      filetype: fasta
+      location: https://raw.githubusercontent.com/galaxyproject/tools-iuc/master/tools/quast/test-data/contigs3.fasta
+      sha: 73fa472e536e30037b6ba7bbea54d4e0253c7ea5
+      unpack: false
+  doc: Placeholder doc
+  edams: []
+  license: MIT
+  size: 509086
+  used-by:
+  - quast
